@@ -16,6 +16,7 @@ interface LinkItem {
   color?: string;
   isExternal?: boolean;
   highlight?: boolean;
+  badge?: string;
 }
 
 export default function App() {
@@ -43,6 +44,15 @@ export default function App() {
     }
   };
   const links: LinkItem[] = [
+    {
+      id: "0",
+      title: "Além das horas líquidas: A Estratégia da maior aprovada do Brasil",
+      url: "https://go.hotmart.com/W105195711R",
+      icon: <BookOpen className="w-6 h-6" />,
+      price: "R$ 15,00",
+      color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+      badge: "✨ NOVIDADE",
+    },
     {
       id: "1",
       title: "NBC TSP Estrutura Conceitual Esquematizada",
@@ -173,9 +183,9 @@ export default function App() {
               link.highlight ? "ring-2 ring-[#E85D04] ring-offset-2 ring-offset-[#FFF8F2]" : ""
             }`}
           >
-            {link.highlight && (
+            {(link.badge || link.highlight) && (
               <div className="absolute top-0 right-0 bg-[#E85D04] text-white text-[9px] sm:text-[10px] font-bold px-2 sm:px-3 py-1 rounded-bl-xl z-10 shadow-sm">
-                🔥 MAIS VENDIDO
+                {link.badge || "🔥 MAIS VENDIDO"}
               </div>
             )}
             <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-xl mr-3 sm:mr-4 ${link.highlight ? 'bg-[#E85D04]/20 text-[#E85D04]' : 'bg-white/20'}`}>
