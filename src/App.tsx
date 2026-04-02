@@ -45,7 +45,7 @@ export default function App() {
   const links: LinkItem[] = [
     {
       id: "1",
-      title: "NBC TG Estrutura Conceitual Esquematizada",
+      title: "NBC TSP Estrutura Conceitual Esquematizada",
       url: "https://go.hotmart.com/A105160071T",
       icon: <BookOpen className="w-6 h-6" />,
       price: "R$ 29,99 na Hotmart",
