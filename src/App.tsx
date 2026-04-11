@@ -87,11 +87,11 @@ export default function App() {
   };
 
   const topProduct: LinkItem = {
-    id: "inss",
-    title: "Do ZERO AO INSS: Pré-Edital - Plano de 90 dias",
-    url: "https://go.hotmart.com/Q105275578I",
+    id: "dossie-marcelo",
+    title: "DOSSIÊ MARCELO BARROS: A LENDA DO ESTUDO REVERSO",
+    url: "https://go.hotmart.com/C105335217C",
     icon: <Rocket className="w-6 h-6" />,
-    price: "R$ 47,00",
+    price: "R$ 24,79",
     color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
     badge: "🚀 LANÇAMENTO",
     highlight: true,
@@ -105,11 +105,24 @@ export default function App() {
     items: LinkItem[];
   }[] = [
     {
-      title: "EBOOK",
+      title: "CURSOS E PROJETOS",
+      items: [
+        {
+          id: "inss",
+          title: "Do ZERO AO INSS: Pré-Edital - Plano de 90 dias",
+          url: "https://go.hotmart.com/Q105275578I",
+          icon: <GraduationCap className="w-6 h-6" />,
+          price: "R$ 47,00",
+          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+        }
+      ]
+    },
+    {
+      title: "LIVRO DIGITAL",
       items: [
         {
           id: "0",
-          title: "Além das horas líquidas: A Estratégia da maior aprovada do Brasil",
+          title: "DOSSIÊ NAZLI: A ESTRATÉGIA DA MAIOR APROVADA DO BRASIL",
           url: "https://go.hotmart.com/W105195711R",
           icon: <BookOpen className="w-6 h-6" />,
           price: "R$ 15,00",
