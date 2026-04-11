@@ -4,7 +4,7 @@
  */
 
 import { ReactNode, useState } from "react";
-import { Instagram, Youtube, MessageCircle, Globe, BookOpen, GraduationCap, Share2, ExternalLink, ChevronDown, Rocket } from "lucide-react";
+import { Instagram, Youtube, MessageCircle, Globe, BookOpen, GraduationCap, Share2, ExternalLink, ChevronDown, Rocket, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 interface LinkItem {
@@ -141,6 +141,21 @@ export default function App() {
           icon: <BookOpen className="w-6 h-6" />,
           price: "R$ 29,99 na Hotmart",
           color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+        }
+      ]
+    },
+    {
+      title: "MATERIAL GRATUITO",
+      headerClass: "bg-[#22C55E] border-2 border-[#22C55E] text-white hover:bg-[#16A34A]",
+      iconClass: "text-white/50",
+      activeIconClass: "rotate-180 text-white",
+      items: [
+        {
+          id: "free-1",
+          title: "GUIA MARCELO BARROS: ESTUDO REVERSO",
+          url: "https://drive.google.com/drive/folders/1JdiAit4PD-bpydbmIAeIKChFYJZ9AQHM",
+          icon: <FileText className="w-6 h-6" />,
+          badge: "🎁 GRÁTIS",
         }
       ]
     },
