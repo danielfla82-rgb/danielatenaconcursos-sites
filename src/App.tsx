@@ -169,6 +169,12 @@ export default function App() {
           url: "https://drive.google.com/drive/folders/1JdiAit4PD-bpydbmIAeIKChFYJZ9AQHM",
           icon: <FileText className="w-6 h-6" />,
           badge: "🎁 GRÁTIS",
+        },
+        {
+          id: "free-2",
+          title: "CONHEÇA OUTROS MATERIAIS",
+          url: "https://atena-concurso.vercel.app/",
+          icon: <Globe className="w-6 h-6" />,
         }
       ]
     },
