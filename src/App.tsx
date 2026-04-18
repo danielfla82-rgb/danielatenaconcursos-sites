@@ -43,7 +43,7 @@ const LinkCard = ({ link, index = 0 }: { link: LinkItem, index?: number }) => (
       {link.icon}
     </div>
     <div className="flex flex-col flex-grow text-left pr-6 sm:pr-8">
-      <span className="font-bold text-[13px] sm:text-base leading-tight">
+      <span className="font-bold text-[13px] sm:text-base leading-tight whitespace-pre-line">
         {link.title}
       </span>
       {link.price && (
@@ -87,11 +87,11 @@ export default function App() {
   };
 
   const topProduct: LinkItem = {
-    id: "dossie-marcelo",
-    title: "DOSSIÊ MARCELO BARROS: A LENDA DO ESTUDO REVERSO",
-    url: "https://go.hotmart.com/C105335217C",
+    id: "gemini-concurso",
+    title: "GEMINI PARA CONCURSO PÚBLICO: \n10 PROMPT AVANÇADO",
+    url: "https://go.hotmart.com/F105447662O",
     icon: <Rocket className="w-6 h-6" />,
-    price: "R$ 24,79",
+    price: "R$ 29,99",
     color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
     badge: "🚀 LANÇAMENTO",
     highlight: true,
@@ -120,6 +120,14 @@ export default function App() {
     {
       title: "LIVRO DIGITAL",
       items: [
+        {
+          id: "dossie-marcelo",
+          title: "DOSSIÊ MARCELO BARROS: A LENDA DO ESTUDO REVERSO",
+          url: "https://go.hotmart.com/C105335217C",
+          icon: <BookOpen className="w-6 h-6" />,
+          price: "R$ 24,79",
+          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+        },
         {
           id: "0",
           title: "DOSSIÊ NAZLI: A ESTRATÉGIA DA MAIOR APROVADA DO BRASIL",
@@ -311,7 +319,9 @@ export default function App() {
                   >
                     <div className="pt-3 space-y-3 sm:space-y-4">
                       {group.items.map((link, itemIndex) => (
-                        <LinkCard key={link.id} link={link} index={itemIndex} />
+                        <div key={link.id}>
+                          <LinkCard link={link} index={itemIndex} />
+                        </div>
                       ))}
                     </div>
                   </motion.div>
