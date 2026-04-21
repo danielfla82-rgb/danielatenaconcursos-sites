@@ -110,7 +110,7 @@ export default function App() {
         {
           id: "mentoria",
           title: "Mentoria Exclusiva",
-          url: "https://atena-concurso.vercel.app/#mentoria-exclusiva",
+          url: "https://atena-concurso.vercel.app/servicos",
           icon: <Users className="w-6 h-6" />,
           color: "bg-gradient-to-r from-[#E85D04] to-[#f48c06] hover:from-[#f48c06] hover:to-[#ffba08]",
         }
@@ -158,16 +158,9 @@ export default function App() {
       activeIconClass: "rotate-180 text-white",
       items: [
         {
-          id: "free-1",
-          title: "GUIA MARCELO BARROS: ESTUDO REVERSO",
-          url: "https://drive.google.com/drive/folders/1JdiAit4PD-bpydbmIAeIKChFYJZ9AQHM",
-          icon: <FileText className="w-6 h-6" />,
-          badge: "🎁 GRÁTIS",
-        },
-        {
           id: "free-2",
           title: "CONHEÇA OUTROS MATERIAIS",
-          url: "https://atena-concurso.vercel.app/",
+          url: "https://atena-concurso.vercel.app/#/materiais",
           icon: <Globe className="w-6 h-6" />,
         }
       ]
