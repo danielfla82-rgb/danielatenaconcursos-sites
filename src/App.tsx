@@ -4,7 +4,7 @@
  */
 
 import { ReactNode, useState } from "react";
-import { Instagram, Youtube, MessageCircle, Globe, BookOpen, GraduationCap, Share2, ExternalLink, ChevronDown, Rocket, FileText } from "lucide-react";
+import { Instagram, Youtube, MessageCircle, Globe, BookOpen, GraduationCap, Share2, ExternalLink, ChevronDown, Rocket, FileText, Users } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 interface LinkItem {
@@ -89,7 +89,7 @@ export default function App() {
   const topProduct: LinkItem = {
     id: "gemini-concurso",
     title: "GEMINI PARA CONCURSO PÚBLICO: \n10 PROMPT AVANÇADO",
-    url: "https://go.hotmart.com/F105447662O",
+    url: "https://pay.hotmart.com/F105447662O?checkoutMode=10",
     icon: <Rocket className="w-6 h-6" />,
     price: "R$ 29,99",
     color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
@@ -105,14 +105,26 @@ export default function App() {
     items: LinkItem[];
   }[] = [
     {
-      title: "CURSOS E PROJETOS",
+      title: "Assessoria Individual",
       items: [
         {
-          id: "inss",
-          title: "Do ZERO AO INSS: Pré-Edital - Plano de 90 dias",
-          url: "https://go.hotmart.com/Q105275578I",
+          id: "mentoria",
+          title: "Mentoria Exclusiva",
+          url: "https://atena-concurso.vercel.app/#mentoria-exclusiva",
+          icon: <Users className="w-6 h-6" />,
+          color: "bg-gradient-to-r from-[#E85D04] to-[#f48c06] hover:from-[#f48c06] hover:to-[#ffba08]",
+        }
+      ]
+    },
+    {
+      title: "Inteligência Artificial aplicada aos concursos",
+      items: [
+        {
+          id: "2",
+          title: "Combo Claude SKILL para Concurso Público",
+          url: "https://pay.hotmart.com/N105131210I?checkoutMode=10",
           icon: <GraduationCap className="w-6 h-6" />,
-          price: "R$ 47,00",
+          price: "R$ 29,99 na Hotmart",
           color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
         }
       ]
@@ -123,7 +135,7 @@ export default function App() {
         {
           id: "dossie-marcelo",
           title: "DOSSIÊ MARCELO BARROS: A LENDA DO ESTUDO REVERSO",
-          url: "https://go.hotmart.com/C105335217C",
+          url: "https://pay.hotmart.com/C105335217C?checkoutMode=10",
           icon: <BookOpen className="w-6 h-6" />,
           price: "R$ 24,79",
           color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
@@ -131,37 +143,11 @@ export default function App() {
         {
           id: "0",
           title: "DOSSIÊ NAZLI: A ESTRATÉGIA DA MAIOR APROVADA DO BRASIL",
-          url: "https://go.hotmart.com/W105195711R",
+          url: "https://pay.hotmart.com/W105195711R?checkoutMode=10",
           icon: <BookOpen className="w-6 h-6" />,
           price: "R$ 15,00",
           color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
           badge: "✨ NOVIDADE",
-        }
-      ]
-    },
-    {
-      title: "Inteligência Artificial aplicada aos concursos",
-      items: [
-        {
-          id: "2",
-          title: "Combo Claude SKILL para Concurso Público",
-          url: "https://go.hotmart.com/N105131210I?dp=1",
-          icon: <GraduationCap className="w-6 h-6" />,
-          price: "R$ 29,99 na Hotmart",
-          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
-        }
-      ]
-    },
-    {
-      title: "Legislação Esquematizada",
-      items: [
-        {
-          id: "1",
-          title: "NBC TSP Estrutura Conceitual Esquematizada",
-          url: "https://go.hotmart.com/A105160071T",
-          icon: <BookOpen className="w-6 h-6" />,
-          price: "R$ 29,99 na Hotmart",
-          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
         }
       ]
     },
@@ -232,6 +218,32 @@ export default function App() {
           icon: <MessageCircle className="w-6 h-6" />,
           color: "bg-[#25D366] hover:bg-[#128C7E]",
         },
+      ]
+    },
+    {
+      title: "Legislação Esquematizada",
+      items: [
+        {
+          id: "1",
+          title: "NBC TSP Estrutura Conceitual Esquematizada",
+          url: "https://go.hotmart.com/A105160071T",
+          icon: <BookOpen className="w-6 h-6" />,
+          price: "R$ 29,99 na Hotmart",
+          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+        }
+      ]
+    },
+    {
+      title: "CURSOS E PROJETOS",
+      items: [
+        {
+          id: "inss",
+          title: "Do ZERO AO INSS: Pré-Edital - Plano de 90 dias",
+          url: "https://go.hotmart.com/Q105275578I",
+          icon: <GraduationCap className="w-6 h-6" />,
+          price: "R$ 47,00",
+          color: "bg-gradient-to-r from-[#111827] to-[#1F2937] hover:from-[#1F2937] hover:to-[#374151]",
+        }
       ]
     }
   ];
